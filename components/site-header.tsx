@@ -126,9 +126,9 @@ export function SiteHeader() {
           )}
         >
           <div className='container flex h-[3.5rem] items-center justify-between'>
-            <Link className='text-md flex items-center' href='/'>
+            {/* <Link className='text-md flex items-center' href='/'>
               Magic UI
-            </Link>
+            </Link> */}
 
             <button
               className='ml-6 md:hidden'
