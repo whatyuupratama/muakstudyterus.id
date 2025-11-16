@@ -42,12 +42,12 @@ export default function HeroSection() {
         <br className='hidden md:block' /> selesaikan tepat waktu dan tanpa
         ribet
       </p>
-      <Link href='wa.me/62895326370143' target='_blank'>
+      {/* <Link href='wa.me/62895326370143' target='_blank'>
         <Button className='translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]'>
           <span>Pesan Sekarang</span>
           <ArrowRightIcon className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1' />
         </Button>
-      </Link>
+      </Link> */}
       <a
         href='https://wa.me/62895326370143?text=Hai,%20saya%20ingin%20konsultasi%20dulu%20sebelum%20memesan%20jasa%20Anda'
         target='_blank'
