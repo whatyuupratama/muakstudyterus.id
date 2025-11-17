@@ -12,9 +12,9 @@ const fontSans = FontSans({
 });
 export const metadata: Metadata = {
   title:
-    'bisaselesai.id — Joki & Layanan IT | Proyek, Penulisan Ilmiah, Isi Seminar',
+    'bisaselesai.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data',
   description:
-    'muakstudyterus menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
+    'bisaselesai.id menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
 };
 
 export default function RootLayout({
