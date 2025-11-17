@@ -43,12 +43,12 @@ export function FAQSection({ items = defaultFAQs }: FAQSectionProps) {
   };
 
   return (
-    <div className='space-y-2'>
+    <div className='space-y-2 pb-64'>
       {items.map((item) => (
         <div key={item.id} className='border-b border-border'>
           <button
             onClick={() => toggleOpen(item.id)}
-            className='w-full py-4 px-0 flex items-center justify-between text-left hover:bg-muted/50 transition-colors'
+            className='w-full py-4 px-0 flex items-center justify-between text-left '
             aria-expanded={openId === item.id}
           >
             <span className='font-medium text-foreground'>{item.question}</span>
