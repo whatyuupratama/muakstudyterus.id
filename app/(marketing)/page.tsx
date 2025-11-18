@@ -1,22 +1,20 @@
 import ClientSection from '@/components/landing/client-section';
-import CallToActionSection from '@/components/landing/cta-section';
+// import CallToActionSection from '@/components/landing/cta-section';
 import HeroSection from '@/components/landing/hero-section';
 import { Testimoni } from '@/components/landing/marque-cs';
 import FAQPage from '@/components/landing/sesi-faq';
 import SideUnik from '@/components/landing/side-content';
 import Particles from '@/components/magicui/particles';
 import { SphereMask } from '@/components/magicui/sphere-mask';
-// import { TerminalDemo } from '@/components/code-side';
 
 export default async function Page() {
   return (
     <>
       <HeroSection />
       <SideUnik />
-      <ClientSection />
-      <SphereMask />
+      {/* <ClientSection /> */}
       <Testimoni />
-
+      <SphereMask />
       <Particles
         className='absolute inset-0 -z-10'
         quantity={50}

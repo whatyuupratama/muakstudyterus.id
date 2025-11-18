@@ -8,7 +8,8 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'motion/react';
 import { LampContainer } from '../ui/lamp';
-import Link from 'next/link';
+import InteractiveHoverButton from '@/components/ui/interactive-hover-button';
+
 export default function HeroSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
@@ -17,14 +18,7 @@ export default function HeroSection() {
       id='hero'
       className='relative mx-auto mt-32 max-w-[80rem] px-6 text-center md:px-8'
     >
-      <div className='w-full h-20 flex items-center justify-center px-6'>
-        <div className='w-full max-w-[1100px] mx-auto rounded-xl border border-white/6 bg-gradient-to-br from-[#051021] via-[#081526] to-[#04030a] backdrop-blur-sm bg-origin-border shadow-inner py-3 px-4'>
-          <span className='block text-center text-sm md:text-base text-white/90 leading-tight'>
-            Sedang dalam tahap maintenance — fitur belum sepenuhnya selesai.
-            Mohon perhatiannya.
-          </span>
-        </div>
-      </div>
+      <div className='w-full h-20 flex items-center justify-center px-6'></div>
       <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
@@ -34,37 +28,27 @@ export default function HeroSection() {
             duration: 0.8,
             ease: 'easeInOut',
           }}
-        >
-          {/* Build lamps <br /> the right way */}
-        </motion.h1>
+        ></motion.h1>
       </LampContainer>
-      {/* <div className='backdrop-filter-[12px] inline-flex h-7 items-center justify-between rounded-full border border-white/5 bg-white/10 px-3 text-xs text-white dark:text-black transition-all ease-in hover:cursor-pointer hover:bg-white/20 group gap-1 translate-y-[-1rem] animate-fade-in opacity-0'></div> */}
+
       <h1 className='bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]'>
-        Deadline mepet? Tenang,
+        Segala Kendala Teknis &
         <br className='hidden md:block' />
-        semua tugas kami jokiin.
+        Ilmiah, Tuntas di Satu Titik.
       </h1>
       <p className='mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]'>
-        Coding error, tugas umum, sampai proyek IT semua kami
-        <br className='hidden md:block' /> selesaikan tepat waktu dan tanpa
-        ribet
+        Mulai dari Riset, Pengembangan Sistem, hingga Tugas Digital
+        <br className='hidden md:block' /> semua kami kerjakan dengan rapi dan
+        tepat waktu ribet
       </p>
-      {/* <Link href='wa.me/62895326370143' target='_blank'>
-        <Button className='translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]'>
-          <span>Pesan Sekarang</span>
-          <ArrowRightIcon className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1' />
-        </Button>
-      </Link> */}
+
       <a
-        href='https://wa.me/62895326370143?text=Hai,%20saya%20ingin%20konsultasi%20dulu%20sebelum%20memesan%20jasa%20Anda'
+        href='https://wa.me/62895326370143?text=Halo!%20Saya%20tertarik%20dengan%20layanan%20satutitik.id.%20Bisa%20konsultasi%20dulu?%20😊'
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Chat via WhatsApp'
       >
-        <Button className='translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]'>
-          <span>Pesan Sekarang</span>
-          <ArrowRightIcon className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1' />
-        </Button>
+        <InteractiveHoverButton>Tanya Admin Dulu</InteractiveHoverButton>
       </a>
       <div
         ref={ref}

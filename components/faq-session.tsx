@@ -43,7 +43,7 @@ export function FAQSection({ items = defaultFAQs }: FAQSectionProps) {
   };
 
   return (
-    <div className='space-y-2 pb-64'>
+    <div className='space-y-2 pb-16 md:pb-64'>
       {items.map((item) => (
         <div key={item.id} className='border-b border-border'>
           <button
