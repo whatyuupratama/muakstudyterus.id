@@ -1,13 +1,12 @@
 import type { MetadataRoute } from 'next';
-
-const baseUrl = 'https://satutitik.id';
+import { siteUrl } from '@/lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return [
     {
-      url: `${baseUrl}/`,
+      url: `${siteUrl}/`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,

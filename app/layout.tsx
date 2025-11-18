@@ -6,15 +6,15 @@ import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 
 import { SmoothCursor } from '@/components/ui/smooth-cursor';
+import { seoDefaults, siteUrl } from '@/lib/seo';
 const fontSans = FontSans({
   subsets: ['latin'],
   variable: '--font-sans',
 });
 export const metadata: Metadata = {
-  title:
-    'satutitik.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data Dan Masih Banyak Lagi',
+  title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
   description:
-    'satutitik.id menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
+    'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
   keywords: [
     'satutitik.id',
     'joki proyek',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     'freelance developer',
     'konsultan software',
   ],
-  metadataBase: new URL('https://satutitik.id'),
+  metadataBase: new URL(siteUrl),
   alternates: {
-    canonical: 'https://satutitik.id',
+    canonical: siteUrl,
   },
   robots: {
     index: true,
@@ -42,30 +42,35 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
-    url: 'https://satutitik.id',
-    title:
-      'satutitik.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data',
+    url: siteUrl,
+    title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
     description:
-      'satutitik.id menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
-    siteName: 'satutitik.id',
+      'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
+    siteName: seoDefaults.siteName,
+    locale: seoDefaults.locale,
     images: [
       {
-        url: 'https://satutitik.id/icon.png',
+        url: new URL('/showgoogle.png', siteUrl).toString(),
         width: 512,
         height: 512,
-        alt: 'satutitik.id logo',
+        alt: 'satutitik.id layanan solusi IT',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'satutitik.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data',
+    title: 'satutitik.id - Layanan Solusi IT, Riset, dan Penjoki Tugas Digital',
     description:
-      'satutitik.id menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
-    images: ['https://satutitik.id/icon.png'],
+      'satutitik.id melayani solusi end-to-end: joki proyek IT, riset & penulisan ilmiah, manipulasi data besar, hingga pendampingan seminar coding. Fokus solusi cepat, profesional, dan siap untuk startup, akademisi, serta tim engineering.',
+    images: [new URL('/showgoogle.png', siteUrl).toString()],
+    site: seoDefaults.siteName,
   },
 };
 
