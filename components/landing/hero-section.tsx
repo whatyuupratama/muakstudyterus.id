@@ -5,6 +5,7 @@ import TextShimmer from '@/components/magicui/text-shimmer';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useInView } from 'framer-motion';
+import Image from 'next/image';
 import { useRef } from 'react';
 import { motion } from 'motion/react';
 import { LampContainer } from '../ui/lamp';
@@ -67,15 +68,14 @@ export default function HeroSection() {
             colorTo='var(--color-two)'
           />
 
-          <img
+          <Image
             src='/sectionshow.png'
             alt='Hero Image'
-            className='hidden relative w-full h-full rounded-[inherit] border object-contain'
-          />
-          <img
-            src='/sectionshow.png'
-            alt='Hero Image'
-            className='block relative w-full h-full  rounded-[inherit] border object-contain '
+            width={1600}
+            height={900}
+            priority
+            className='relative w-full h-full rounded-[inherit] border object-contain'
+            sizes='(min-width: 1024px) 960px, 100vw'
           />
         </div>
       </div>

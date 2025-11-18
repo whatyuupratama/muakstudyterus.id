@@ -12,7 +12,7 @@ const fontSans = FontSans({
 });
 export const metadata: Metadata = {
   title:
-    'satutitik.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data',
+    'satutitik.id - Joki & Layanan IT | Proyek, Penulisan Ilmiah, Manipulasi Ribuan Data Dan Masih Banyak Lagi',
   description:
     'satutitik.id menyediakan layanan joki proyek, pengembangan perangkat lunak, penulisan dan publikasi ilmiah, serta pengisian seminar coding. Solusi cepat, profesional, dan dapat disesuaikan untuk startup, akademisi, dan tim engineering.',
   keywords: [

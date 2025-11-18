@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ClientSection() {
   return (
     <section
@@ -12,10 +14,14 @@ export default function ClientSection() {
           <div className='mt-6'>
             <ul className='flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white'>
               <li>
-                <img
-                  src={`/acia.png`}
+                <Image
+                  src='/acia.png'
                   alt='asia'
+                  height={32}
+                  width={112}
                   className='h-8 w-28 px-2 dark:brightness-0 dark:invert opacity-50'
+                  sizes='112px'
+                  loading='lazy'
                 />
               </li>
             </ul>

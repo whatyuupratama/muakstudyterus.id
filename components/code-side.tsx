@@ -20,7 +20,7 @@ export function TerminalDemo() {
   return (
     <Terminal>
       <TypingAnimation>
-        &gt; satutitik execute --target="Your-Goal"
+        &gt; satutitik execute --target=&quot;Your-Goal&quot;
       </TypingAnimation>
       {steps.map((step, index) => (
         <AnimatedSpan key={index} className={stepColor}>
