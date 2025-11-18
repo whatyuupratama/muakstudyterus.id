@@ -1,4 +1,4 @@
-export const siteUrl = 'https://satutitik.id';
+export const siteUrl = 'https://satutitik.engineer';
 
 export const seoDefaults = {
   siteName: 'satutitik.id',
