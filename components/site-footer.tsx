@@ -80,7 +80,7 @@ export function SiteFooter() {
           </nav>
           <span className='text-[12px] text-gray-500 sm:text-center dark:text-gray-400'>
             © {new Date().getFullYear()}{' '}
-            <span className='cursor-pointer'>satutitik.id 2025.</span>
+            <span className='cursor-pointer'>satutitik.id </span>
             All rights reserved.
           </span>
         </div>
