@@ -46,14 +46,7 @@ export function SiteFooter() {
                 rounded-lg bg-white/60 dark:bg-black/40 backdrop-blur border border-gray-300/30 shadow-sm '
                 aria-hidden='true'
               >
-                Alloow nore disini, yuk check{' '}
-                <a
-                  href='https://www.instagram.com/satutitik.ids/'
-                  target='_blank'
-                  className='bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent font-semibold hover:from-purple-500 hover:via-pink-500 hover:to-orange-400 transition-all duration-300'
-                >
-                  instagram kita
-                </a>{' '}
+                alow nore disini, {' '}
                 👋🏻
               </span>
             </div>
