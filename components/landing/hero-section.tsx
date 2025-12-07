@@ -44,13 +44,13 @@ export default function HeroSection() {
       </p>
 
       <a
-        // href='https://wa.me/62895326370143?text=Halo!%20Saya%20tertarik%20dengan%20layanan%20satutitik.id.%20Bisa%20konsultasi%20dulu?%20😊'
+        href='https://wa.me/62895326370143?text=Halo!%20Saya%20tertarik%20dengan%20layanan%20satutitik.id.%20Bisa%20konsultasi%20dulu?%20😊'
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Chat via WhatsApp'
       >
         <InteractiveHoverButton>
-          Mohon maaf worker sedang pusing skripsi
+        Chat via WhatsApp
         </InteractiveHoverButton>
       </a>
       <div
